@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_casa_arduino/teste.dart';
 
 import 'login.dart';
 import 'signup.dart';
@@ -22,8 +23,9 @@ class MyApp extends StatelessWidget {
       routes: <String, WidgetBuilder>{
         '/home': (BuildContext context) =>
             const MyHomePage(title: 'Tela inicial'),
-        '/login': (BuildContext conxtex) => const Login(),
-        '/signup': (BuildContext conxtex) => const Signup(),
+        '/login': (BuildContext context) => const Login(),
+        '/signup': (BuildContext context) => const Signup(),
+        '/teste': (BuildContext context) => Teste(),
       },
     );
   }
@@ -82,10 +84,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   primary: Color.fromRGBO(0, 170, 238, 1),
-                  side: BorderSide(
-                    width: 2,
-                    color: Colors.white
-                  ),
+                  side: BorderSide(width: 2, color: Colors.white),
                 ),
                 onPressed: () {
                   Navigator.of(context).pushReplacementNamed('/login');
@@ -105,10 +104,7 @@ class _MyHomePageState extends State<MyHomePage> {
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
                   primary: Color.fromRGBO(0, 170, 238, 1),
-                  side: BorderSide(
-                      width: 2,
-                      color: Colors.white
-                  ),
+                  side: BorderSide(width: 2, color: Colors.white),
                 ),
                 onPressed: () {
                   Navigator.of(context).pushReplacementNamed('/signup');
