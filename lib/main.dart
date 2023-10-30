@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Text(
-                    "Entrar",
+                    "Fazer login",
                     style: TextStyle(color: Colors.white, fontSize: 24),
                   ),
                 ),
@@ -112,7 +112,7 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Text(
-                    "Cadastre-se",
+                    "Criar conta",
                     style: TextStyle(color: Colors.white, fontSize: 24),
                   ),
                 ),

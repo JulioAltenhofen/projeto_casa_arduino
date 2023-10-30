@@ -15,9 +15,9 @@ class Login extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Padding(
-              padding: EdgeInsets.only(bottom: 48),
+              padding: EdgeInsets.only(bottom: 10),
               child: Text(
-                "Fazer Login",
+                "Fazer login",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   color: Colors.white,
@@ -30,7 +30,6 @@ class Login extends StatelessWidget {
               padding:
                   const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
               child: TextField(
-                autofocus: true,
                 keyboardType: TextInputType.text,
                 style: TextStyle(color: Colors.white, fontSize: 20),
                 decoration: InputDecoration(
@@ -42,9 +41,8 @@ class Login extends StatelessWidget {
               ),
             ),
             Padding(
-              padding: const EdgeInsets.fromLTRB(40, 8, 40, 75),
+              padding: const EdgeInsets.fromLTRB(40, 8, 40, 50),
               child: TextField(
-                autofocus: true,
                 keyboardType: TextInputType.text,
                 obscureText: true,
                 style: TextStyle(
@@ -64,7 +62,7 @@ class Login extends StatelessWidget {
                   const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color.fromRGBO(0, 170, 238, 1),
+                  backgroundColor: Color.fromRGBO(0, 170, 238, 1),
                   side: BorderSide(width: 2, color: Colors.white),
                 ),
                 onPressed: () {
@@ -84,7 +82,7 @@ class Login extends StatelessWidget {
                   const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  primary: Color.fromRGBO(0, 170, 238, 1),
+                  backgroundColor: Color.fromRGBO(0, 170, 238, 1),
                   side: BorderSide(width: 2, color: Colors.white),
                 ),
                 onPressed: () {
