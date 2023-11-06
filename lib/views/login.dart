@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'teste.dart';
 
 class Login extends StatelessWidget {
   const Login({Key? key}) : super(key: key);
@@ -7,7 +6,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(0, 170, 238, 1),
+      backgroundColor: Color.fromRGBO(11, 113, 0, 1),
       body: Padding(
         padding: const EdgeInsets.all(8.0),
         child: Column(
@@ -62,11 +61,11 @@ class Login extends StatelessWidget {
                   const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromRGBO(0, 170, 238, 1),
+                  backgroundColor: Color.fromRGBO(11, 113, 0, 1),
                   side: BorderSide(width: 2, color: Colors.white),
                 ),
                 onPressed: () {
-                  Navigator.of(context).pushReplacementNamed('/teste');
+                  Navigator.of(context).pushReplacementNamed('/comodos');
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
@@ -82,16 +81,16 @@ class Login extends StatelessWidget {
                   const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
               child: ElevatedButton(
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: Color.fromRGBO(0, 170, 238, 1),
+                  backgroundColor: Color.fromRGBO(11, 113, 0, 1),
                   side: BorderSide(width: 2, color: Colors.white),
                 ),
                 onPressed: () {
-                  Navigator.of(context).pushReplacementNamed('/');
+                  Navigator.of(context).pushReplacementNamed('/signup');
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Text(
-                    "Voltar",
+                    "Cadastre-se",
                     style: TextStyle(color: Colors.white, fontSize: 24),
                   ),
                 ),

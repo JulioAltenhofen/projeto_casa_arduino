@@ -60,7 +60,7 @@ class Signup extends StatelessWidget {
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromRGBO(0, 170, 238, 1),
+                    backgroundColor: Color.fromRGBO(11, 113, 0, 1),
                     side: BorderSide(width: 2, color: Colors.white),
                   ),
                   onPressed: () {
@@ -80,7 +80,7 @@ class Signup extends StatelessWidget {
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromRGBO(0, 170, 238, 1),
+                    backgroundColor: Color.fromRGBO(11, 113, 0, 1),
                     side: BorderSide(width: 2, color: Colors.white),
                   ),
                   onPressed: () {
@@ -105,7 +105,7 @@ class Signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(0, 170, 238, 1),
+      backgroundColor: Color.fromRGBO(11, 113, 0, 1),
       body: constroiTelaCadastro(context),
     );
   }
