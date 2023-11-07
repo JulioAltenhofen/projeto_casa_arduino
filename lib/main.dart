@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_casa_arduino/provider/comodos.dart';
 import 'package:projeto_casa_arduino/provider/users.dart';
 import 'package:projeto_casa_arduino/routes/app_routes.dart';
-import 'package:projeto_casa_arduino/views/house.dart';
+import 'package:projeto_casa_arduino/views/comodos_list.dart';
+import 'package:projeto_casa_arduino/views/home.dart';
 import 'package:projeto_casa_arduino/views/login.dart';
 import 'package:projeto_casa_arduino/views/signup.dart';
 import 'package:provider/provider.dart';
@@ -18,6 +20,9 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (ctx) => Users(),
         ),
+        ChangeNotifierProvider(
+          create: (ctx) => Comodos(),
+        ),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
@@ -26,9 +31,10 @@ class MyApp extends StatelessWidget {
           visualDensity: VisualDensity.adaptivePlatformDensity,
         ),
         routes: {
+          AppRoutes.HOME: (_) => Home(),
+          AppRoutes.COMODOS_LIST: (_) => ComodosList(),
+          AppRoutes.SIGNUP: (_) => Signup(),
           AppRoutes.LOGIN: (_) => Login(),
-          AppRoutes.COMODOS: (_) => Comodo(),
-          AppRoutes.SIGNUP: (_) => Signup()
         },
       ),
     );

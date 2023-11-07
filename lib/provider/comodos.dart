@@ -1,14 +1,14 @@
 import 'dart:math';
 import 'package:flutter/material.dart';
-import 'package:projeto_casa_arduino/data/dummy_users.dart';
-import 'package:projeto_casa_arduino/models/user.dart';
+import '../data/dummy_comodos.dart';
+import '../models/comodo.dart';
 
-class Users with ChangeNotifier {
+class Comodos with ChangeNotifier {
   //_items é privado
-  final Map<String, User> _items = {...dummy_users};
+  final Map<String, Comodo> _items = {...dummy_comodos};
   //clone da lista, pra n retornar uma referencia para esse map, pra outra parte da aplicação n fazer crud e essa parte n ser notificada
   //2 gets pra ver
-  List<User> get all {
+  List<Comodo> get all {
     return [..._items.values];
   }
 
@@ -17,31 +17,34 @@ class Users with ChangeNotifier {
   }
 
 //metodos
-  User byIndex(int i) {
+  Comodo byIndex(int i) {
     return _items.values.elementAt(i);
   }
 
-  void put(User user) {
-    if (user == null) {
+  void put(Comodo comodo) {
+    if (comodo == null) {
       return;
     }
     //alterar
-    if (user.id != null &&
-        user.id!.trim().isNotEmpty &&
-        _items.containsKey(user.id)) {
+    if (comodo.id != null &&
+        comodo.id!.trim().isNotEmpty &&
+        _items.containsKey(comodo.id)) {
       _items.update(
-        user.id!,
-        (_) => User(id: user.id, name: user.name, email: user.email),
+        comodo.id!,
+        (_) => Comodo(
+            id: comodo.id,
+            name: comodo.name,
+            dispositivos: comodo.dispositivos),
       );
     } else {
       //adicionar
       final id = Random().nextDouble().toString();
       _items.putIfAbsent(
         id,
-        () => User(
+        () => Comodo(
           id: id,
-          name: user.name,
-          email: user.email,
+          name: comodo.name,
+          dispositivos: comodo.dispositivos,
         ),
       );
     }
@@ -49,9 +52,9 @@ class Users with ChangeNotifier {
     notifyListeners();
   }
 
-  void remove(User user) {
-    if (user != null && user.id != null) {
-      _items.remove(user.id);
+  void remove(Comodo comodo) {
+    if (comodo.id != null && comodo.id != null) {
+      _items.remove(comodo);
       //notifica o provider q mudou
       notifyListeners();
     }

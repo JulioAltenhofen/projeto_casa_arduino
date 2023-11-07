@@ -85,12 +85,12 @@ class Login extends StatelessWidget {
                   side: BorderSide(width: 2, color: Colors.white),
                 ),
                 onPressed: () {
-                  Navigator.of(context).pushReplacementNamed('/signup');
+                  Navigator.of(context).pushReplacementNamed('/');
                 },
                 child: Padding(
                   padding: const EdgeInsets.all(16.0),
                   child: Text(
-                    "Cadastre-se",
+                    "Voltar",
                     style: TextStyle(color: Colors.white, fontSize: 24),
                   ),
                 ),

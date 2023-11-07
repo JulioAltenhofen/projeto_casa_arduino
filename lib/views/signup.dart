@@ -31,8 +31,47 @@ class Signup extends StatelessWidget {
                   keyboardType: TextInputType.text,
                   style: TextStyle(color: Colors.white, fontSize: 20),
                   decoration: InputDecoration(
+                    labelText: "Nome",
+                    labelStyle: TextStyle(
+                        color: Colors.white, fontSize: 25, height: 0.5),
+                  ),
+                ),
+              ),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
+                child: TextField(
+                  keyboardType: TextInputType.text,
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  decoration: InputDecoration(
+                    labelText: "Sobrenome",
+                    labelStyle: TextStyle(
+                        color: Colors.white, fontSize: 25, height: 0.5),
+                  ),
+                ),
+              ),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
+                child: TextField(
+                  keyboardType: TextInputType.text,
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  decoration: InputDecoration(
                     labelText: "E-mail",
                     hintText: "exemplo@exemplo.com",
+                    labelStyle: TextStyle(
+                        color: Colors.white, fontSize: 25, height: 0.5),
+                  ),
+                ),
+              ),
+              Padding(
+                padding:
+                    const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
+                child: TextField(
+                  keyboardType: TextInputType.text,
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  decoration: InputDecoration(
+                    labelText: "Login",
                     labelStyle: TextStyle(
                         color: Colors.white, fontSize: 25, height: 0.5),
                   ),
@@ -64,7 +103,7 @@ class Signup extends StatelessWidget {
                     side: BorderSide(width: 2, color: Colors.white),
                   ),
                   onPressed: () {
-                    Navigator.of(context).pushReplacementNamed('/teste');
+                    Navigator.of(context).pushReplacementNamed('/login');
                   },
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
