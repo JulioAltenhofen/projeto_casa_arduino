@@ -8,6 +8,6 @@ class Comodo {
   const Comodo({
     this.id,
     @required this.name,
-    @required this.dispositivos,
+    this.dispositivos,
   });
 }

@@ -16,7 +16,8 @@ class UserList extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-              Navigator.of(context).pushNamed(AppRoutes.USER_FORM);
+              // Navigator.of(context).pushNamed(AppRoutes.CADASTRO_COMODOS);
+              Navigator.of(context).pushReplacementNamed('/novocomodo');
             },
           ),
         ],

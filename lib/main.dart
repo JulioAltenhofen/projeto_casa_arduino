@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_casa_arduino/models/comodo.dart';
 import 'package:projeto_casa_arduino/provider/comodos.dart';
 import 'package:projeto_casa_arduino/provider/users.dart';
 import 'package:projeto_casa_arduino/routes/app_routes.dart';
+import 'package:projeto_casa_arduino/views/comodo_form.dart';
 import 'package:projeto_casa_arduino/views/comodos_list.dart';
 import 'package:projeto_casa_arduino/views/home.dart';
 import 'package:projeto_casa_arduino/views/login.dart';
@@ -35,6 +37,7 @@ class MyApp extends StatelessWidget {
           AppRoutes.COMODOS_LIST: (_) => ComodosList(),
           AppRoutes.SIGNUP: (_) => Signup(),
           AppRoutes.LOGIN: (_) => Login(),
+          AppRoutes.CADASTRO_COMODOS: (_) => ComodoForm(),
         },
       ),
     );

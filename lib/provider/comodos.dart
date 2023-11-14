@@ -55,7 +55,7 @@ class Comodos with ChangeNotifier {
   void remove(Comodo comodo) {
     if (comodo.id != null && comodo.id != null) {
       _items.remove(comodo);
-      //notifica o provider q mudou
+
       notifyListeners();
     }
   }

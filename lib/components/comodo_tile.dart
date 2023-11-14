@@ -14,11 +14,17 @@ class ComodoTile extends StatelessWidget {
   Widget build(BuildContext context) {
     return ListTile(
       title: Text(comodos.name!),
-      subtitle: Text("Dispositivos: " + comodos.dispositivos!),
+      //subtitle: Text("Dispositivos: " + comodos.dispositivos!),
       trailing: Container(
-        width: 100,
+        width: 160,
         child: Row(
           children: <Widget>[
+            ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).pushReplacementNamed('/');
+              },
+              child: Text('Ver Comodo'),
+            ),
             IconButton(
               icon: Icon(Icons.delete),
               color: Colors.red,
@@ -29,11 +35,11 @@ class ComodoTile extends StatelessWidget {
                     title: Text('Excluir Comodo'),
                     content: Text('Tem certeza???'),
                     actions: <Widget>[
-                      FlatButton(
+                      TextButton(
                         child: Text('Não'),
                         onPressed: () => Navigator.of(context).pop(false),
                       ),
-                      FlatButton(
+                      TextButton(
                         child: Text('Sim'),
                         onPressed: () => Navigator.of(context).pop(true),
                       ),
@@ -47,21 +53,13 @@ class ComodoTile extends StatelessWidget {
                 });
               },
             ),
-            IconButton(
-                icon: Icon(Icons.abc),
-                color: Colors.red,
-                onPressed: () {
-                  print("ola");
-                }),
           ],
         ),
       ),
     );
   }
-
-  FlatButton({required Text child, required void Function() onPressed}) {}
 }
-
+/*
 class MyListItem extends StatelessWidget {
   final String itemText;
 
@@ -81,3 +79,4 @@ class MyListItem extends StatelessWidget {
     );
   }
 }
+*/

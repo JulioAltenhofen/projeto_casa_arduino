@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_casa_arduino/components/comodo_tile.dart';
+import 'package:projeto_casa_arduino/models/comodo.dart';
 import 'package:projeto_casa_arduino/provider/comodos.dart';
 import 'package:projeto_casa_arduino/routes/app_routes.dart';
 import 'package:provider/provider.dart';
@@ -16,7 +17,7 @@ class ComodosList extends StatelessWidget {
           IconButton(
             icon: Icon(Icons.add),
             onPressed: () {
-              Navigator.of(context).pushNamed(AppRoutes.COMODOS_LIST);
+              Navigator.of(context).pushNamed(AppRoutes.CADASTRO_COMODOS);
             },
           ),
         ],
