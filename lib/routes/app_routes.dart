@@ -5,4 +5,5 @@ class AppRoutes {
   static const SIGNUP = '/signup';
   static const LOGIN = '/login';
   static const CADASTRO_COMODOS = '/comodo-form';
+  static const SHOWCOMODO = '/showcomodo';
 }

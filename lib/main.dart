@@ -7,6 +7,7 @@ import 'package:projeto_casa_arduino/views/comodo_form.dart';
 import 'package:projeto_casa_arduino/views/comodos_list.dart';
 import 'package:projeto_casa_arduino/views/home.dart';
 import 'package:projeto_casa_arduino/views/login.dart';
+import 'package:projeto_casa_arduino/views/showComodo.dart';
 import 'package:projeto_casa_arduino/views/signup.dart';
 import 'package:provider/provider.dart';
 
@@ -38,6 +39,8 @@ class MyApp extends StatelessWidget {
           AppRoutes.SIGNUP: (_) => Signup(),
           AppRoutes.LOGIN: (_) => Login(),
           AppRoutes.CADASTRO_COMODOS: (_) => ComodoForm(),
+          AppRoutes.SHOWCOMODO: (_) => showComodo(),
+          // AppRoutes.SHOWDEVICE: (_) => showDevice(),
         },
       ),
     );
