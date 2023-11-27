@@ -5,6 +5,8 @@ import 'package:projeto_casa_arduino/provider/comodos.dart';
 import 'package:projeto_casa_arduino/routes/app_routes.dart';
 import 'package:provider/provider.dart';
 
+import '../data/dummy_comodos.dart';
+
 class ComodosList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -23,8 +25,10 @@ class ComodosList extends StatelessWidget {
         ],
       ),
       body: ListView.builder(
-        itemCount: comodos.count,
-        itemBuilder: (ctx, i) => ComodoTile(comodos.byIndex(i)),
+        itemCount: dummy_comodos.length,
+        itemBuilder: (ctx, index) {
+          return ComodoTile(comodo: dummy_comodos[1]);
+        },
       ),
     );
   }

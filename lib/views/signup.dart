@@ -18,7 +18,7 @@ class Signup extends StatelessWidget {
                   "Criar conta",
                   textAlign: TextAlign.center,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 40,
                     fontWeight: FontWeight.w700,
                   ),
@@ -29,11 +29,11 @@ class Signup extends StatelessWidget {
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
                 child: TextField(
                   keyboardType: TextInputType.text,
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: TextStyle(color: Colors.black, fontSize: 20),
                   decoration: InputDecoration(
                     labelText: "Nome",
                     labelStyle: TextStyle(
-                        color: Colors.white, fontSize: 25, height: 0.5),
+                        color: Colors.black, fontSize: 25, height: 0.5),
                   ),
                 ),
               ),
@@ -42,11 +42,11 @@ class Signup extends StatelessWidget {
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
                 child: TextField(
                   keyboardType: TextInputType.text,
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: TextStyle(color: Colors.black, fontSize: 20),
                   decoration: InputDecoration(
                     labelText: "Sobrenome",
                     labelStyle: TextStyle(
-                        color: Colors.white, fontSize: 25, height: 0.5),
+                        color: Colors.black, fontSize: 25, height: 0.5),
                   ),
                 ),
               ),
@@ -55,12 +55,12 @@ class Signup extends StatelessWidget {
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
                 child: TextField(
                   keyboardType: TextInputType.text,
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: TextStyle(color: Colors.black, fontSize: 20),
                   decoration: InputDecoration(
                     labelText: "E-mail",
                     hintText: "exemplo@exemplo.com",
                     labelStyle: TextStyle(
-                        color: Colors.white, fontSize: 25, height: 0.5),
+                        color: Colors.black, fontSize: 25, height: 0.5),
                   ),
                 ),
               ),
@@ -69,11 +69,11 @@ class Signup extends StatelessWidget {
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
                 child: TextField(
                   keyboardType: TextInputType.text,
-                  style: TextStyle(color: Colors.white, fontSize: 20),
+                  style: TextStyle(color: Colors.black, fontSize: 20),
                   decoration: InputDecoration(
                     labelText: "Login",
                     labelStyle: TextStyle(
-                        color: Colors.white, fontSize: 25, height: 0.5),
+                        color: Colors.black, fontSize: 25, height: 0.5),
                   ),
                 ),
               ),
@@ -83,14 +83,14 @@ class Signup extends StatelessWidget {
                   keyboardType: TextInputType.text,
                   obscureText: true,
                   style: TextStyle(
-                    color: Colors.white,
+                    color: Colors.black,
                     fontSize: 20,
                   ),
                   decoration: InputDecoration(
                     labelText: "Senha",
                     hintText: "**********",
                     labelStyle: TextStyle(
-                        color: Colors.white, fontSize: 25, height: 0.5),
+                        color: Colors.black, fontSize: 25, height: 0.5),
                   ),
                 ),
               ),
@@ -99,8 +99,8 @@ class Signup extends StatelessWidget {
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromRGBO(11, 113, 0, 1),
-                    side: BorderSide(width: 2, color: Colors.white),
+                    backgroundColor: Color.fromRGBO(16, 157, 0, 1),
+                    side: BorderSide(width: 2, color: Colors.black),
                   ),
                   onPressed: () {
                     Navigator.of(context).pushReplacementNamed('/login');
@@ -109,7 +109,7 @@ class Signup extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
                       "Cadastrar",
-                      style: TextStyle(color: Colors.white, fontSize: 24),
+                      style: TextStyle(color: Colors.black, fontSize: 24),
                     ),
                   ),
                 ),
@@ -119,8 +119,8 @@ class Signup extends StatelessWidget {
                     const EdgeInsets.symmetric(vertical: 8.0, horizontal: 40.0),
                 child: ElevatedButton(
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Color.fromRGBO(11, 113, 0, 1),
-                    side: BorderSide(width: 2, color: Colors.white),
+                    backgroundColor: Color.fromRGBO(16, 157, 0, 1),
+                    side: BorderSide(width: 2, color: Colors.black),
                   ),
                   onPressed: () {
                     Navigator.of(context).pushReplacementNamed('/');
@@ -129,7 +129,7 @@ class Signup extends StatelessWidget {
                     padding: const EdgeInsets.all(16.0),
                     child: Text(
                       "Voltar",
-                      style: TextStyle(color: Colors.white, fontSize: 24),
+                      style: TextStyle(color: Colors.black, fontSize: 24),
                     ),
                   ),
                 ),
@@ -144,7 +144,7 @@ class Signup extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(11, 113, 0, 1),
+      backgroundColor: Color.fromRGBO(255, 255, 255, 1),
       body: constroiTelaCadastro(context),
     );
   }
