@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_casa_arduino/components/comodo_tile.dart';
-import 'package:projeto_casa_arduino/models/comodo.dart';
+import 'package:projeto_casa_arduino/components/user_tile.dart';
 import 'package:projeto_casa_arduino/provider/comodos.dart';
+import 'package:projeto_casa_arduino/provider/users.dart';
 import 'package:projeto_casa_arduino/routes/app_routes.dart';
 import 'package:provider/provider.dart';
-
-import '../data/dummy_comodos.dart';
 
 class ComodosList extends StatelessWidget {
   @override
@@ -14,21 +13,11 @@ class ComodosList extends StatelessWidget {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lista de Comodos'),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.add),
-            onPressed: () {
-              Navigator.of(context).pushNamed(AppRoutes.CADASTRO_COMODOS);
-            },
-          ),
-        ],
+        title: Text('Lista de Usuários'),
       ),
       body: ListView.builder(
-        itemCount: dummy_comodos.length,
-        itemBuilder: (ctx, index) {
-          return ComodoTile(comodo: dummy_comodos[1]);
-        },
+        itemCount: comodos.count,
+        itemBuilder: (ctx, i) => ComodoTile(comodos.byIndex(i)),
       ),
     );
   }

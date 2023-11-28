@@ -27,10 +27,10 @@ class MyApp extends StatelessWidget {
           create: (ctx) => Comodos(),
         ),
         ChangeNotifierProvider(
-          create: (ctx) => Alarme(),
+          create: (ctx) => Alarmes(),
         ),
         ChangeNotifierProvider(
-          create: (ctx) => Lampada(),
+          create: (ctx) => Lampadas(),
         ),
       ],
       child: MaterialApp(
@@ -44,7 +44,7 @@ class MyApp extends StatelessWidget {
           AppRoutes.COMODOS_LIST: (_) => ComodosList(),
           AppRoutes.SIGNUP: (_) => Signup(),
           AppRoutes.LOGIN: (_) => Login(),
-          AppRoutes.SHOWDEVICE: (_) => ShowDevice(),
+          AppRoutes.SHOWDEVICES: (_) => DevicesList(),
         },
       ),
     );

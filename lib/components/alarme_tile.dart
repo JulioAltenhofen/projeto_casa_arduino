@@ -1,17 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:projeto_casa_arduino/models/alarme.dart';
 import 'package:projeto_casa_arduino/models/comodo.dart';
 import 'package:projeto_casa_arduino/provider/comodos.dart';
 import 'package:provider/provider.dart';
 
-class ComodoTile extends StatelessWidget {
-  final Comodo comodos;
+class AlarmeTile extends StatelessWidget {
+  final Alarme alarmes;
 
-  const ComodoTile(this.comodos, {Comodo? comodo});
+  const AlarmeTile(this.alarmes);
 
   @override
   Widget build(BuildContext context) {
     return ListTile(
-      title: Text(comodos.name!),
+      title: Text(alarmes.name!),
+      //subtitle: Text("Dispositivos: " + comodos.dispositivos!),
       trailing: Container(
         width: 160,
         child: Row(
@@ -20,7 +22,7 @@ class ComodoTile extends StatelessWidget {
               onPressed: () {
                 Navigator.of(context).pushReplacementNamed('/showdevice');
               },
-              child: Text('Ver Comodo'),
+              child: Text('Ver Dispositivo'),
             ),
           ],
         ),

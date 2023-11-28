@@ -1,12 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:projeto_casa_arduino/data/dummy_alarme.dart';
 
-class Alarme with ChangeNotifier {
-  //_items é privado
+import '../models/alarme.dart';
 
+class Alarmes with ChangeNotifier {
   final Map<String, Alarme> _items = {...dummy_alarme};
-  //clone da lista, pra n retornar uma referencia para esse map, pra outra parte da aplicação n fazer crud e essa parte n ser notificada
-  //2 gets pra ver
   List<Alarme> get all {
     return [..._items.values];
   }

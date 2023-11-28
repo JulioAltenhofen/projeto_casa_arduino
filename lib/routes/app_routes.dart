@@ -6,5 +6,5 @@ class AppRoutes {
   static const LOGIN = '/login';
   static const CADASTRO_COMODOS = '/comodo-form';
   static const SHOWCOMODO = '/showcomodo';
-  static const SHOWDEVICE = '/showdevice';
+  static const SHOWDEVICES = '/showdevice';
 }
