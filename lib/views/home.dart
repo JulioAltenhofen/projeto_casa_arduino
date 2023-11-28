@@ -23,32 +23,22 @@ class Home extends StatelessWidget {
               Column(
                 children: [
                   Padding(
-                    padding: EdgeInsets.all(8.0),
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 8.0, horizontal: 40.0),
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Color.fromRGBO(16, 157, 0, 1),
+                        side: BorderSide(width: 2, color: Colors.black),
+                      ),
                       onPressed: () {
                         Navigator.of(context).pushReplacementNamed('/login');
                       },
-                      child: Text(
-                        'Fazer login',
-                        style: TextStyle(
-                          fontSize: 24,
+                      child: Padding(
+                        padding: const EdgeInsets.all(16.0),
+                        child: Text(
+                          "Fazer Login",
+                          style: TextStyle(color: Colors.black, fontSize: 24),
                         ),
-                        textAlign: TextAlign.center,
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).pushReplacementNamed('/signup');
-                      },
-                      child: Text(
-                        'Cadastre-se',
-                        style: TextStyle(
-                          fontSize: 24,
-                        ),
-                        textAlign: TextAlign.center,
                       ),
                     ),
                   ),

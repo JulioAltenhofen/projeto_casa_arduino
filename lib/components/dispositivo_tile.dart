@@ -6,7 +6,7 @@ import 'package:provider/provider.dart';
 class ComodoTile extends StatelessWidget {
   final Comodo comodos;
 
-  const ComodoTile(this.comodos, {Comodo? comodo});
+  const ComodoTile(this.comodos);
 
   @override
   Widget build(BuildContext context) {
@@ -19,9 +19,9 @@ class ComodoTile extends StatelessWidget {
           children: <Widget>[
             ElevatedButton(
               onPressed: () {
-                Navigator.of(context).pushReplacementNamed('/showcomodo');
+                Navigator.of(context).pushReplacementNamed('/showdevice');
               },
-              child: Text('Ver Comodo'),
+              child: Text('Ver Dispositivo'),
             ),
             IconButton(
               icon: Icon(Icons.delete),
@@ -30,7 +30,7 @@ class ComodoTile extends StatelessWidget {
                 showDialog(
                   context: context,
                   builder: (ctx) => AlertDialog(
-                    title: Text('Excluir Comodo'),
+                    title: Text('Excluir Dispositivo'),
                     content: Text('Tem certeza???'),
                     actions: <Widget>[
                       TextButton(

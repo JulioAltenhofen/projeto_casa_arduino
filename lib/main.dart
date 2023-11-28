@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
-import 'package:projeto_casa_arduino/models/comodo.dart';
+import 'package:projeto_casa_arduino/provider/alarme.dart';
 import 'package:projeto_casa_arduino/provider/comodos.dart';
+import 'package:projeto_casa_arduino/provider/lampada.dart';
 import 'package:projeto_casa_arduino/provider/users.dart';
 import 'package:projeto_casa_arduino/routes/app_routes.dart';
-import 'package:projeto_casa_arduino/views/comodo_form.dart';
 import 'package:projeto_casa_arduino/views/comodos_list.dart';
 import 'package:projeto_casa_arduino/views/home.dart';
 import 'package:projeto_casa_arduino/views/login.dart';
-import 'package:projeto_casa_arduino/views/showComodo.dart';
+import 'package:projeto_casa_arduino/views/device_list.dart';
 import 'package:projeto_casa_arduino/views/signup.dart';
 import 'package:provider/provider.dart';
 
@@ -26,6 +26,12 @@ class MyApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (ctx) => Comodos(),
         ),
+        ChangeNotifierProvider(
+          create: (ctx) => Alarme(),
+        ),
+        ChangeNotifierProvider(
+          create: (ctx) => Lampada(),
+        ),
       ],
       child: MaterialApp(
         title: 'Flutter Demo',
@@ -38,9 +44,7 @@ class MyApp extends StatelessWidget {
           AppRoutes.COMODOS_LIST: (_) => ComodosList(),
           AppRoutes.SIGNUP: (_) => Signup(),
           AppRoutes.LOGIN: (_) => Login(),
-          AppRoutes.CADASTRO_COMODOS: (_) => ComodoForm(),
-          AppRoutes.SHOWCOMODO: (_) => showComodo(),
-          // AppRoutes.SHOWDEVICE: (_) => showDevice(),
+          AppRoutes.SHOWDEVICE: (_) => ShowDevice(),
         },
       ),
     );
