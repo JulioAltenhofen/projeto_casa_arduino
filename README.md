@@ -1,4 +1,4 @@
-<h1>Automação para Residências</h1> 
+<h1>Casa Inteligente com Arduino</h1> 
 
 
 <p align="center">
@@ -56,9 +56,9 @@ Coloque um passo a passo para rodar a sua aplicação. **Dica: clone o próprio 
 
 ### Usuários: 
 
-|name|email|password|token|avatar|
-| -------- |-------- |-------- |-------- |-------- |
-|Lais Lima|laislima98@hotmail.com|lais123|true|https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcS9-U_HbQAipum9lWln3APcBIwng7T46hdBA42EJv8Hf6Z4fDT3&usqp=CAU|
+|name|email|password|token|
+| -------- |-------- |-------- |-------- |
+|Lais Lima|laislima98@hotmail.com|lais123|true|
 
 ... 
 
@@ -80,6 +80,6 @@ Em [issues]() foram abertos alguns problemas gerados durante o desenvolvimento d
 
 Liste o time responsável pelo desenvolvimento do projeto
 
-| [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |  [<img src="https://avatars2.githubusercontent.com/u/46378210?s=400&u=071f7791bb03f8e102d835bdb9c2f0d3d24e8a34&v=4" width=115><br><sub>Diana Regina</sub>](https://github.com/Diana-ops) |
+| [<img src="" width=115><br><sub>DIEGO JUNIOR ZANIN KIELB</sub>]() |  [<img src="" width=115><br><sub>JULIO CESAR ALTENHOFEN</sub>]() |  [<img src="" width=115><br><sub>FERNANDO AUGUSTO ORTOLAN</sub>]() |
 | :---: | :---: | :---: 
 
